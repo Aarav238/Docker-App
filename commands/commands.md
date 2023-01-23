@@ -1,4 +1,4 @@
-- docker run -v $(pwd):/app  -p 3000:3000 -d --name node-image node-app
+- `docker run -v $(pwd):/app  -p 3000:3000 -d --name node-image node-app`
 - `docker build -t node-app .`
 - `docker rm node-image -f`
 - `docker exec -it node-image bash`
