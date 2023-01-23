@@ -4,3 +4,7 @@
 - `docker exec -it node-image bash`
 - `docker run -p 3000:3000 -d --name   node-image node-app`
 - `docker image rm ecc5ad4229ea`
+- `docker ps` - Shows running containers
+- `docker ps -a` - Shows all containers that are started or stopped.
+- `docker log image_name` - Shows all the log messages.
+- `docker run -v $(pwd):/app -v /app/node_modules -p 3000:3000 -d --name node-image node-app` - In this -v , A new volume is created which says don't touch the node_modules folder in this directory.
