@@ -1,6 +1,6 @@
 - docker run -v $(pwd):/app  -p 3000:3000 -d --name node-image node-app
-- docker build -t node-app .
-- docker rm node-image -f
-- docker exec -it node-image bash
-- docker run -p 3000:3000 -d --name   node-image node-app
-- docker image rm ecc5ad4229ea
+- `docker build -t node-app .`
+- `docker rm node-image -f`
+- `docker exec -it node-image bash`
+- `docker run -p 3000:3000 -d --name   node-image node-app`
+- `docker image rm ecc5ad4229ea`
