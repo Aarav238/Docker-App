@@ -15,3 +15,6 @@ in dockerfile-
 EXPOSE $PORT`
 
 - `--env PORT=4000`  or `-e PORT=4000` - use env
+- `--env-file ./.env` - this help to access all environment variable present in env file
+- `docker volume ls` - shows all the volumes running
+- `docker rm node-image -fv` - removes all the volumes as well
