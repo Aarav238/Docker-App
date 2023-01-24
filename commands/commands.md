@@ -18,3 +18,5 @@ EXPOSE $PORT`
 - `--env-file ./.env` - this help to access all environment variable present in env file
 - `docker volume ls` - shows all the volumes running
 - `docker rm node-image -fv` - removes all the volumes as well
+- `docker-compose up -d` - this build the docker image using compose file.
+- `docker-compose down -v ` - shut down the container and `-v` this flag is used to delete all the volumes.
