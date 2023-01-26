@@ -20,3 +20,6 @@ EXPOSE $PORT`
 - `docker rm node-image -fv` - removes all the volumes as well
 - `docker-compose up -d` - this build the docker image using compose file.
 - `docker-compose down -v ` - shut down the container and `-v` this flag is used to delete all the volumes.
+- `docker-compose up -d --build` - build the container before starting
+- `docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d` - run the docker-compose file for the production environment
+- `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d` - run the docker-compose file for the development environment
