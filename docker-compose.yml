@@ -8,4 +8,6 @@ services:
       - PORT=3000
   mongo:
     image: mongo
-    
+    environment: 
+      - MONGO_INITDB_ROOT_USERNAME=aarav
+      - MONGO_INITDB_ROOT_PASSWORD=mydatabase
