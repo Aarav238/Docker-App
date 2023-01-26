@@ -23,12 +23,6 @@ EXPOSE $PORT`
 - `docker-compose up -d --build` - build the container before starting
 - `docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d` - run the docker-compose file for the production environment
 - `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d` - run the docker-compose file for the development environment
+- Important point :- Mongo version above 5 did not support AVX support in virtual box so try to use `mongo:4.4.18` version.
 
-CONTAINER ID   IMAGE                 COMMAND                  CREATED          STATUS                       PORTS                                       NAMES
-ab233f747439   mongo                 "docker-entrypoint.s…"   18 seconds ago   Exited (132) 8 seconds ago                                               docker-app_mongo_1
-1f101f8710ec   docker-app_node-app   "docker-entrypoint.s…"   18 seconds ago   Up 8 seconds                 0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   docker-app_node-app_1
-e14f1e73d5ba   mysql                 "docker-entrypoint.s…"   9 days ago       Exited (1) 9 days ago                                                    brave_franklin
-08b104d68a3b   ubuntu                "bash"                   9 days ago       Exited (0) 9 days ago                                                    pensive_einstein
-a4d077e5e5a5   hello-world           "/hello"                 9 days ago       Exited (0) 9 days ago                                                    charming_dubinsky
-118f85d60494   ubuntu                "bash"                   9 days ago       Exited (2) 9 days ago                                                    zealous_agnesi
-cd61f222fc96   hello-world           "/hello"                 9 days ago       Exited (0) 9 days ago                                                    gracious_babbage
+                                                

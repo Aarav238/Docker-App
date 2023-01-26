@@ -6,8 +6,8 @@ services:
       - "3000:3000"
     environment:
       - PORT=3000
-  mongo:
-    image: mongo
+  mongo-db:
+    image: mongo:4.4.18
     environment: 
       - MONGO_INITDB_ROOT_USERNAME=aarav
       - MONGO_INITDB_ROOT_PASSWORD=mydatabase
