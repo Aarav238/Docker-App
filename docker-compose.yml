@@ -11,3 +11,8 @@ services:
     environment: 
       - MONGO_INITDB_ROOT_USERNAME=aarav
       - MONGO_INITDB_ROOT_PASSWORD=mydatabase
+    volumes:
+      - mongo-vol:/data/db
+
+volumes:
+ mongo-vol:
