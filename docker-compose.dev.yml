@@ -10,7 +10,16 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
+      - MONGO_USER=aarav
+      - MONGO_PASSWORD=mydatabase
     command: npm run dev
+  mongo-db:
+    environment: 
+      - MONGO_INITDB_ROOT_USERNAME=aarav
+      - MONGO_INITDB_ROOT_PASSWORD=mydatabase
+      
+  
+  
 
 
     
