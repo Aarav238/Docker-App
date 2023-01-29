@@ -1,6 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const session = require("express-session")
+const redis = require("redis")
+
+let RedisStore = require("connect-redis")(session)
 const {MONGO_USER , MONGO_PASSWORD ,  MONGO_PORT , MONGO_IP} = require("./config/config.js")
+
+const postRouter = require("./routes/postRoutes.js")
+const userRouter = require("./routes/userRoutes")
 
 const app = express();
 
@@ -25,6 +32,8 @@ const connectWithRetry = () => {
 
 connectWithRetry();
 
+app.use(express.json);
+
 
 
 app.get("/",(req,res)  => {
@@ -33,6 +42,9 @@ app.get("/",(req,res)  => {
     )
 
 })
+
+app.use("/posts", postRouter)
+app.use("/users",userRouter)
 
 
 
