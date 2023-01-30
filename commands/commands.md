@@ -27,4 +27,7 @@ EXPOSE $PORT`
 - `--no-deps  node-app ` - this `--no-deps` ignore the service you depends on , it just start the mention services. here service is `node-app`
 
 - `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --force-recreate` - this command will recreate the container .
-                                                
+
+- `docker push ` - to push changes to the docker hub repository.
+
+- `docker stack -c docker-compose.yml -c docker-compose.prod.yml my-app ` - to start the docker container using docker swarm
