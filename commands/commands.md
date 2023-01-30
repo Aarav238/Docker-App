@@ -25,4 +25,6 @@ EXPOSE $PORT`
 - `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d` - run the docker-compose file for the development environment
 - Important point :- Mongo version above 5 did not support AVX support in virtual box so try to use `mongo:4.4.18` version.
 - `--no-deps  node-app ` - this `--no-deps` ignore the service you depends on , it just start the mention services. here service is `node-app`
+
+- `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --force-recreate` - this command will recreate the container .
                                                 
