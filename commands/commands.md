@@ -31,3 +31,4 @@ EXPOSE $PORT`
 - `docker push ` - to push changes to the docker hub repository.
 
 - `docker stack -c docker-compose.yml -c docker-compose.prod.yml my-app ` - to start the docker container using docker swarm
+- `docker stack ps myapp` - list out all the tasks.
